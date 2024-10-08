@@ -7,13 +7,12 @@ function Training(dia){
 
 function getDayAndTraining(){
     const data = new Date()
-    const dias = document.getElementById("dias")
-    const diaAtual = dias.children
+    const diaDaSemana = document.getElementById("diaDaSemana")
 
-    diaAtual[data.getDay()].style.cssText = "border-color: black; color: black;"
-    console.log(data.getDay())
-    console.log(diaAtual[data.getDay()])
+    const dias = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
+    diaDaSemana.innerText = `${dias[data.getDay()]}-feira`
 
+    
     Training(data.getDay())
 }
 
