@@ -29,3 +29,21 @@ header p{
 #dias{
     text-align: center;
 }
+#ListaDeTreinosDoDia{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.treinosDoDia{
+    width: 90%;
+    height: 180px;
+    border-radius: 20px;
+    background-color: rgb(255, 200, 97);
+
+    margin-top: 40px;
+}
