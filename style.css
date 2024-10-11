@@ -68,5 +68,9 @@ header p{
 .nomeDoTreinoERepetições h1{
     color: white;
     font-size: 13px;
-
+}
+.treinosDoDia img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
 }

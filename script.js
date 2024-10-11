@@ -1,11 +1,11 @@
 const listaDeTreinos = [
     {
         id: "Perna",
-        treinos: ["Agachamento", "Leg press", "Cadeira flexora", "Flexora em pé", "Mesa flexora", "Cadeira flexora", "Panturrilha sentado", "Panturrilha em pé", "Panturrilha em pé (Livre - 100 rep)"]
+        treinos: ["Agachamento hack", "Leg press", "Cadeira extensora", "Cadeira flexora", "Flexora em pé", "Mesa flexora", "Panturrilha sentado", "Panturrilha em pé", "Panturrilha em pé (Livre - 100 rep)"]
     },
     {
         id: "Ombro",
-        treinos: ["Desenvolvimento", "Elevação frontal", "Elevação lateral", "Elevação lateral na máquina"]
+        treinos: ["Desenvolvimento", "Elevação frontal", "Elevação lateral", "Elevação lateral na polia"]
     },
     {
         id: "Braço",
@@ -17,7 +17,7 @@ const listaDeTreinos = [
     },
     {
         id: "Glúteo",
-        treinos: ["Leg press (Pés mais altos)", "Agachamento", "Elevação pélvica", "Cadeira abdultora"]
+        treinos: ["Leg press (Pés mais altos)", "Agachamento hack", "Elevação pélvica", "Cadeira abdultora"]
     },
     {
         id: "Costas",
@@ -42,10 +42,12 @@ function Training(dia) {
             for(let j = 0; j < listaDeTreinos[i].treinos.length; j++){
                 const elements = document.createElement("div");
                 elements.className = "treinosDoDia";
-                elements.innerHTML = `<div class='nomeDoTreinoERepetições'> <h1 class='NomeDoTreinoEmCadaLista'>${listaDeTreinos[i].treinos[j]}</h1> <h1>4x6</h1> </div>`
+                elements.innerHTML = `<img src="Images/${listaDeTreinos[i].treinos[j].replace(/ /g, '%20')}.jpg" alt=""> <div class='nomeDoTreinoERepetições'> <h1 class='NomeDoTreinoEmCadaLista'>${listaDeTreinos[i].treinos[j]}</h1> <h1>4x6</h1> </div>`;
     
                 // Insere o elemento criado dentro do DashBoardTreinos
                 DashBoardTreinos.appendChild(elements);
+                console.log(listaDeTreinos[i].treinos[j])
+
             }
         }
     }
@@ -57,7 +59,7 @@ function getDayAndTraining() {
     const diaDaSemana = document.getElementById("diaDaSemana")
 
     const dias = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
-    diaDaSemana.innerText = `${dias[data.getDay()]}-feira`
+    diaDaSemana.innerText = `${dias[data.getDay()]}`
 
 
     Training(data.getDay())
