@@ -42,7 +42,7 @@ function Training(dia) {
             for(let j = 0; j < listaDeTreinos[i].treinos.length; j++){
                 const elements = document.createElement("div");
                 elements.className = "treinosDoDia";
-                elements.innerHTML = `<img src="Images/${listaDeTreinos[i].treinos[j].replace(/ /g, '%20')}.jpg" alt=""> <div class='nomeDoTreinoERepetições'> <h1 class='NomeDoTreinoEmCadaLista'>${listaDeTreinos[i].treinos[j]}</h1> <h1>4x6</h1> </div>`;
+                elements.innerHTML = `<img src="./Images/${listaDeTreinos[i].treinos[j].replace(/ /g, '%20')}.jpg" alt=""> <div class='nomeDoTreinoERepetições'> <h1 class='NomeDoTreinoEmCadaLista'>${listaDeTreinos[i].treinos[j]}</h1> <h1>4x6</h1> </div>`;
     
                 // Insere o elemento criado dentro do DashBoardTreinos
                 DashBoardTreinos.appendChild(elements);
