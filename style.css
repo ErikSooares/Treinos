@@ -46,4 +46,27 @@ header p{
     background-color: rgb(255, 200, 97);
 
     margin-top: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+}
+.nomeDoTreinoERepetições{
+    width: calc(100% - 20px);
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-color: black;
+    border-radius: 0 0 20px 20px; 
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nomeDoTreinoERepetições h1{
+    color: white;
+    font-size: 17px;
+
 }

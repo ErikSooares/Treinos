@@ -40,10 +40,9 @@ function Training(dia) {
     for (let i = 0; i < listaDeTreinos.length; i++) {
         if (listaDeTreinos[i].id == training[dia]) {
             for(let j = 0; j < listaDeTreinos[i].treinos.length; j++){
-                console.log(listaDeTreinos[i].treinos[j])
-
                 const elements = document.createElement("div");
                 elements.className = "treinosDoDia";
+                elements.innerHTML = `<div class='nomeDoTreinoERepetições'> <h1 class='NomeDoTreinoEmCadaLista'>${listaDeTreinos[i].treinos[j]}</h1> <h1>4x6</h1> </div>`
     
                 // Insere o elemento criado dentro do DashBoardTreinos
                 DashBoardTreinos.appendChild(elements);
