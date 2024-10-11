@@ -5,7 +5,7 @@ const listaDeTreinos = [
     },
     {
         id: "Ombro",
-        treinos: [""]
+        treinos: ["Desenvolvimento", "Elevação frontal", "Elevação lateral", "Elevação lateral na máquina"]
     },
     {
         id: "Braço",
@@ -13,7 +13,7 @@ const listaDeTreinos = [
     },
     {
         id: "Corpo",
-        treinos: [""]
+        treinos: ["Triceps testa na polia", "Rosca Scott", "Leg press", "Panturrilha em pé", "Remada fechada", "Remada aberta", "Supino"]
     },
     {
         id: "Glúteo",
@@ -25,7 +25,7 @@ const listaDeTreinos = [
     },
     {
         id: "Peito",
-        treinos: [""]
+        treinos: ["Supino reto", "Supino inclinado", "Cruxifixo máquina", "Crossover"]
     }
 ]
 
